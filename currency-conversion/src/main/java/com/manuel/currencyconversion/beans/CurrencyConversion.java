@@ -1,24 +1,29 @@
-package com.manuel.springmicroservicesproject.bean;
+package com.manuel.currencyconversion.beans;
+
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.math.BigDecimal;
-@Entity
+
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class CurrencyExchange {
+public class CurrencyConversion {
     @Id
     private long id;
     @Column(name = "currency_from")
     private String from;
     @Column(name = "currency_to")
     private String to;
+    private BigDecimal qty;
     private BigDecimal conversionMultiples;
+    private BigDecimal totalCalculatedAmount;
     private String environment;
 }
