@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/currency-conversion/currency-conversion.iml" filepath="$PROJECT_DIR$/currency-conversion/currency-conversion.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-naming-server-currency-exch/microservice-naming-server-currency-exch.iml" filepath="$PROJECT_DIR$/microservice-naming-server-currency-exch/microservice-naming-server-currency-exch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" filepath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-microservices.iml" filepath="$PROJECT_DIR$/.idea/spring-microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-microservices-project/spring-microservices-exchange-service.iml" filepath="$PROJECT_DIR$/spring-microservices-project/spring-microservices-exchange-service.iml" />
+    </modules>
+  </component>
+</project>
