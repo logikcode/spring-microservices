@@ -2,7 +2,7 @@ version: '2.10.2'
 
 services:
   currency-exchange:
-    image:  logikcode/cx-spring-microservices-exchange-service:0.0.1-SNAPSHOT
+    image:  logikcode/cx-microservices-currency-exchange:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
       - "8000:8000"
@@ -13,8 +13,8 @@ services:
     environment:
      EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://currency-exchange-naming-server:8761/eureka
 
-     currency-converter:
-       image: logikcode/cx-currency-conversion:0.0.1-SNAPSHOT
+  currency-converter:
+       image: logikcode/cx-microservices-currency-converter:0.0.1-SNAPSHOT
        mem_limit: 700m
        ports:
          - "8100:8100"
@@ -25,7 +25,7 @@ services:
        environment:
          EUREKA.CLIENT.SERVICEURL.DEFAULTZONE: http://currency-exchange-naming-server:8761/eureka
 
-  cx-microservices-api-gateway:
+  api-gateway:
     image: logikcode/cx-microservices-api-gateway:0.0.1-SNAPSHOT
     mem_limit: 700m
     ports:
@@ -42,7 +42,7 @@ services:
     image: openzipkin/zipkin:2.23
     mem_limit: 300m
     ports:
-      - "9411:9411 "
+      - "9411:9411"
     networks:
       - currency-network
     depends_on:

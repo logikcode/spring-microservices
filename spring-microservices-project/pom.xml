@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.logikcode.microservices</groupId>
-    <artifactId>spring-microservices-exchange-service</artifactId>
+    <artifactId>microservices-currency-exchange</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>currency-exchange-docker</name>
-    <description>spring-microservices-exchange-service</description>
+    <name>currency-exchange</name>
+    <description>service handling currency exchange</description>
     <!--sleuth configuration -->
 
     <properties>
